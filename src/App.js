@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import temp_Logo from './temp_Logo.jpg';
 import './App.css';
 
+const Header = () => {
+  return(
+    <div>
+      <button>Button 1</button>
+      <button>Button 2</button>
+      <button>Button 3</button>
+      <button>Button 3</button>
+  </div>
+  )
+}
+
+const Footer = ()=> {
+  return(
+    <div>
+      Handcrafted from 
+      <a href="https://reactjs.org/docs/getting-started.html">react</a> by
+      <a href="https://twitter.com/AthulMul">Athul</a> for 
+      <a href="https://antai.nl/">Antai</a>
+    </div>
+  )
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Footer/>
     </div>
   );
 }
